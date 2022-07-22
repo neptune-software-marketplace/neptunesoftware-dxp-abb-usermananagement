@@ -1,0 +1,55 @@
+{
+	"id": "4B5D384C-AD09-ED11-B47A-000D3AB2359F",
+	"createdAt": "2022-07-22T10:59:04.126Z",
+	"createdBy": "lloyd.trevarthen@neptune-software.com",
+	"git": {
+		"targetServers": [],
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-usermananagement",
+		"testServers": []
+	},
+	"name": "neptunesoftware-dxp-abb-usermananagement",
+	"description": null,
+	"ver": "22.7.22.117",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "A251B785-89D8-4094-963A-993B39280F33",
+			"ver": "22.7.22.1259",
+			"application": "userrolemanager",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "FF665193-A739-4C9D-A487-FB3DA378EFBF",
+			"name": "CoreAPI Security_User",
+			"ver": "22.7.22.112",
+			"description": "API to access results of Planet 9 Security_User Details.",
+			"apiGroup": null
+		}
+	],
+	"odataMock": [],
+	"odataSource": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"wf_definition": [],
+	"department": [],
+	"script_scheduler": [],
+	"connector": []
+}
