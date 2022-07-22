@@ -20,15 +20,7 @@
 			"description": ""
 		}
 	],
-	"api": [
-		{
-			"id": "FF665193-A739-4C9D-A487-FB3DA378EFBF",
-			"name": "CoreAPI Security_User",
-			"ver": "22.7.22.112",
-			"description": "API to access results of Planet 9 Security_User Details.",
-			"apiGroup": null
-		}
-	],
+	"api": [],
 	"odataMock": [],
 	"odataSource": [],
 	"dictionary": [],
