@@ -9,7 +9,7 @@
 	},
 	"name": "neptunesoftware-dxp-abb-usermananagement",
 	"description": null,
-	"ver": "22.7.22.117",
+	"ver": "22.7.22.119",
 	"enableCICD": true,
 	"apps": [
 		{
