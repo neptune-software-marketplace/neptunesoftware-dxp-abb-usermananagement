@@ -1,0 +1,17 @@
+console.log("GetUserData AjaxSuccess")
+
+var UserIndividalData = modelUserIndividalData.getData()
+
+//UserIndividalData.push(JSON.parse(xhr.responseText));
+UserIndividalData.push(xhr.responseJSON);
+
+oButtonGetUserDetails.setText("User Details Retrieved: "+UserIndividalData.length);
+
+modelUserIndividalData.setData(UserIndividalData);
+
+var totalUsers = modelUsers.getData();
+
+if (UserIndividalData.length === totalUsers.numRecords) {
+    console.log("collateListOfRoles...")
+    collateListOfRoles()
+}

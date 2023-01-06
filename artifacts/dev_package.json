@@ -1,28 +1,25 @@
 {
-	"id": "4B5D384C-AD09-ED11-B47A-000D3AB2359F",
-	"createdAt": "2022-07-22T10:59:04.126Z",
+	"id": "a8a12220-a28d-ed11-9f5f-000d3a66e586",
+	"createdAt": "2023-01-06T09:11:43.263Z",
 	"createdBy": "lloyd.trevarthen@neptune-software.com",
 	"git": {
-		"targetServers": [],
-		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-usermananagement",
-		"testServers": []
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-usermananagement"
 	},
-	"name": "neptunesoftware-dxp-abb-usermananagement",
+	"name": "neptunesoftware-dxp-abb-usermanagement",
 	"description": null,
-	"ver": "22.7.22.119",
+	"ver": "23.1.6.912",
 	"enableCICD": true,
 	"apps": [
 		{
-			"id": "A251B785-89D8-4094-963A-993B39280F33",
-			"ver": "22.7.22.1259",
+			"id": "a251b785-89d8-4094-963a-993b39280f33",
 			"application": "userrolemanager",
 			"title": "",
 			"description": ""
 		}
 	],
 	"api": [],
-	"odataMock": [],
 	"odataSource": [],
+	"odataMock": [],
 	"dictionary": [],
 	"jsclass": [],
 	"jsscript_group": [],
@@ -40,8 +37,10 @@
 	"systems": [],
 	"doc": [],
 	"wf_notifications": [],
-	"wf_definition": [],
 	"department": [],
 	"script_scheduler": [],
-	"connector": []
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"media_library": []
 }

@@ -1,0 +1,58 @@
+sap.ui.getCore().attachInit(function (startParams) {
+
+    modelUserIndividalData.setData([]);
+
+});
+
+
+function collateListOfRoles() {
+    var userIndividualData = modelUserIndividalData.getData();
+
+    var arrayOfUniqueRoles = [];
+    var arrayOfUniqueRolesWithID = []
+
+    console.log(userIndividualData)
+    // --- For each user
+    for (i = 0; i < userIndividualData.length; i++) {
+        // --- For each role
+        for (j = 0; j < userIndividualData[i].user.roles.length; j++) {
+            // Check arrayOfUniqueRoles
+            if ((arrayOfUniqueRoles.includes(userIndividualData[i].user.roles[j].name)) === false) {
+                arrayOfUniqueRoles.push(userIndividualData[i].user.roles[j].name);
+                arrayOfUniqueRolesWithID.push({ "name": userIndividualData[i].user.roles[j].name, "id": userIndividualData[i].user.roles[j].id })
+            }
+        }
+    }
+
+    modeloSelectRole.setData(arrayOfUniqueRolesWithID);
+    oSelectRole.setEnabled(true)
+
+    setTimeout(function () {
+        var selectedID = oSelectRole.getSelectedKey();
+        displayListOfUsersBasedOnTheRole(selectedID);
+
+    }, 100);
+
+}
+
+function displayListOfUsersBasedOnTheRole(id) {
+    var userIndividualData = modelUserIndividalData.getData();
+
+    var arrayOfUsersForSelectedRole = [];
+
+    // --- For each user
+    for (i = 0; i < userIndividualData.length; i++) {
+        // --- For each role
+        for (j = 0; j < userIndividualData[i].user.roles.length; j++) {
+            // Check arrayOfUniqueRoles
+            if (userIndividualData[i].user.roles[j].id === id) {
+                arrayOfUsersForSelectedRole.push(userIndividualData[i]);
+            }
+        }
+    }
+
+    console.log("arrayOfUsersForSelectedRole:");
+    console.log(arrayOfUsersForSelectedRole);
+
+    modeloListUsers.setData(arrayOfUsersForSelectedRole);
+}

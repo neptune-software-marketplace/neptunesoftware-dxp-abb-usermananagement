@@ -1,0 +1,18 @@
+const users = modelUsers.getData();
+
+console.log("--- users ---");
+console.log(users)
+
+console.log("--- Number of users ---");
+console.log(users.userRecords.length);
+
+oPage.setTitle("--- Number of users: "+users.userRecords.length+" ---");
+
+
+for (i = 0; i < users.userRecords.length; i++) {
+    var options = {
+        data: {"id":users.userRecords[i].id}
+        };
+    apiGetUserData(options);
+}
+
