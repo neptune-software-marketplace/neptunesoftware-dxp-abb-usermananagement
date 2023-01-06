@@ -442,7 +442,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "23.1.6.1012",
+	"ver": "23.1.6.1026",
 	"application": "userrolemanager",
 	"title": "",
 	"description": "",
@@ -450,7 +450,7 @@
 	"enableManifest": false,
 	"enableStylesheet": true,
 	"enableObfuscate": true,
-	"onlyRunLaunchpad": false,
+	"onlyRunLaunchpad": true,
 	"disabled": false,
 	"loadLaunchpadCode": null,
 	"loadApplicationCode": null,
